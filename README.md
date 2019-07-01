@@ -1,1 +1,1 @@
-# Panacea.Modules.BatteryIndicator
+# BatteryIndicator plugin
