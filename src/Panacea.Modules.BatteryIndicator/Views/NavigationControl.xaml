@@ -8,6 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              DockPanel.Dock="Right"
-             Panel.ZIndex="888">
-    <controls:MaterialIcon Icon="{Binding BatteryIcon}"/>
+             Panel.ZIndex="995">
+    <controls:MaterialIcon Icon="{Binding BatteryIcon}" Foreground="White" Margin="10 15"/>
 </UserControl>

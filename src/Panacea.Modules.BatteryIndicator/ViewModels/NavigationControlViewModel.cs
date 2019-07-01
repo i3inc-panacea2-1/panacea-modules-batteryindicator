@@ -54,7 +54,7 @@ namespace Panacea.Modules.BatteryIndicator.ViewModels
             switch (p.BatteryChargeStatus)
             {
                 case BatteryChargeStatus.NoSystemBattery:
-                    BatteryIcon = "";
+                    BatteryIcon = "battery_charging_full";
                     break;
                 case BatteryChargeStatus.Charging:
 
