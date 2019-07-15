@@ -1,4 +1,5 @@
-﻿using Panacea.Modules.BatteryIndicator.Views;
+﻿using MaterialIcons;
+using Panacea.Modules.BatteryIndicator.Views;
 using Panacea.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -23,8 +24,8 @@ namespace Panacea.Modules.BatteryIndicator.ViewModels
             UpdateBattery();
         }
 
-        string _batteryIcon;
-        public string BatteryIcon
+        MaterialIconType _batteryIcon;
+        public MaterialIconType BatteryIcon
         {
             get => _batteryIcon;
             set
@@ -54,76 +55,76 @@ namespace Panacea.Modules.BatteryIndicator.ViewModels
             switch (p.BatteryChargeStatus)
             {
                 case BatteryChargeStatus.NoSystemBattery:
-                    BatteryIcon = "battery_charging_full";
+                    BatteryIcon = MaterialIconType.ic_battery_charging_full;
                     break;
                 case BatteryChargeStatus.Charging:
 
                     if (a < 20)
                     {
-                        BatteryIcon = "battery_alert";
+                        BatteryIcon = MaterialIconType.ic_battery_alert;
                     }
                     else if (a < 30)
                     {
-                        BatteryIcon = "battery_charging_20";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_20;
                     }
                     else if (a < 40)
                     {
-                        BatteryIcon = "battery_charging_30";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_30;
                     }
                     else if (a < 60)
                     {
-                        BatteryIcon = "battery_charging_50";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_50;
                     }
                     else if (a < 70)
                     {
-                        BatteryIcon = "battery_charging_60";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_60;
                     }
                     else if (a < 90)
                     {
-                        BatteryIcon = "battery_charging_80";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_80;
                     }
                     else if (a < 100)
                     {
-                        BatteryIcon = "battery_charging_90";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_90;
                     }
                     else
                     {
-                        BatteryIcon = "battery_charging_full";
+                        BatteryIcon = MaterialIconType.ic_battery_charging_full;
                     }
 
                     break;
                 default:
                     if (a < 20)
                     {
-                        BatteryIcon = "battery_alert";
+                        BatteryIcon = MaterialIconType.ic_battery_alert;
                     }
                     else if (a < 30)
                     {
-                        BatteryIcon = "battery_20";
+                        BatteryIcon = MaterialIconType.ic_battery_20;
                     }
                     else if (a < 40)
                     {
-                        BatteryIcon = "battery_30";
+                        BatteryIcon = MaterialIconType.ic_battery_30;
                     }
                     else if (a < 60)
                     {
-                        BatteryIcon = "battery_50";
+                        BatteryIcon = MaterialIconType.ic_battery_50;
                     }
                     else if (a < 70)
                     {
-                        BatteryIcon = "battery_60";
+                        BatteryIcon = MaterialIconType.ic_battery_60;
                     }
                     else if (a < 90)
                     {
-                        BatteryIcon = "battery_80";
+                        BatteryIcon = MaterialIconType.ic_battery_80;
                     }
                     else if (a < 100)
                     {
-                        BatteryIcon = "battery_90";
+                        BatteryIcon = MaterialIconType.ic_battery_90;
                     }
                     else
                     {
-                        BatteryIcon = "battery_full";
+                        BatteryIcon = MaterialIconType.ic_battery_full;
                     }
                     break;
             }
